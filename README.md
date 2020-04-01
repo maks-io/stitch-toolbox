@@ -28,6 +28,11 @@ Instead, it deletes the individual documents - which is a rather slow process.
 Again I kept getting api request failures, this is why I decided to include a continuation mechanism to keep deleting documents in a given collection, even when errors occur.
 You can control how many times to continue the deletion process (to avoid endless loops), via the `ALLOWED_NUMBER_OF_DELETION_TRIES` constant in `src/constants/index.js`.
 
+### Progress Display
+The app's output isn't very verbose at the moment - it only displays messages when starting and finishing an operation.
+I plan to include more detailed information - especially because some actions may take several minutes.
+For now - if you want to keep track of what the application is doing check its console output in the developer console.
+
 ## Query Params
 
 The app currently supports the following query parameters:
